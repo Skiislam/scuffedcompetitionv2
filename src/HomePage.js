@@ -1,29 +1,47 @@
 import React from "react";
-import './HomePage.css';
-import randomLogo from './random_logo_by_criticl_d7eqdvw-pre.png';
+import "./HomePage.css";
+import randomLogo from "./random_logo_by_criticl_d7eqdvw-pre.png";
 export default function HomePage() {
+  return (
+    <div className="container">
+      <div id="imgC">
+        <img
+          style={{ width: 500, height: 600 }}
+          src={randomLogo}
+          alt="somethingblank"
+        />
+      </div>
+      <div id="textC">
+        <h1> Welcome to ScuffCompetition</h1>
 
+        <div className="Textbox">
+          <p className="HomePageTextBox">
+            <p>
+              {" "}
+              Scuff Compeition is based off an already popular game called Song
+              Competition. Essentially, the game requires your Twitch Chat to
+              send music in they listen too. You can set a limit on how many
+              songs a single person can send and how many total songs can be
+              sent.
+            </p>
+            <p>
+              After that is done then the game can officially be started. Your
+              dashboard will change to featuring two random songs. You have 120
+              seconds to play the song for you twitch chat and by typing in 1s
+              or 2s, they will vote which song they like. If a song has more 5
+              or more likes, and it gets voted off, the song is not out, we
+              still have the loser bracket in which they get to comepete one
+              more time.
+            </p>
 
-    return(
-
-        <div className="container">
-            <div id="imgC">
-            <img style={{ width: 500, height: 600 }} src={randomLogo} alt='somethingblank'/>
-            </div>
-            <div id="textC">
-                <h1> Welcome to ScuffCompetition</h1>
-                <p> This project has been scuffed off of Song Stream, who originally created this game.</p>
-                <p>And I have decided to create a clone while also making it as scuffed as humanly possible</p>
-                <p>Simply this game allows your twitch viewers to recommend a song, depending on the number of your choosing</p>
-                <p> Then through the chat they can vote which song they like better by typing 1 or 2. This is a kings of the hill</p>
-                <p> Where songs that have the least skips wins and you can probably award the person that recommended that song I dont know</p>
-                <p> about that feature but oh well. Anyways please login below to give twitch access, you won't be hacked!</p>
-                <button> Click here!!</button>
-
-            </div>
+            <p>
+              The Game is a King of the Hill tournamet type setup, so if you are
+              ready to play, press the button below to login with twitch!
+            </p>
+          </p>
+        </div>
+        <button> Create Game</button>
+      </div>
     </div>
-
-
-    );
-
+  );
 }
